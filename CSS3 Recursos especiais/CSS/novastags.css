@@ -1,0 +1,15 @@
+header{
+	width: 100%;
+	height: 200px;
+	border-bottom: 2px solid grey;
+
+}
+
+nav{
+	padding: 5px;
+}
+
+footer{
+	color: red;
+	font-size: 0.9em;
+}

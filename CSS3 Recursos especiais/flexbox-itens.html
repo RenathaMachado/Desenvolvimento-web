@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+<html>
+<head>
+	<title>Flexbox Layout</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#conteudo{
+			background: #dcdcdc;
+			height: 400px;
+			display: flex;
+			flex-direction: row;
+		}
+
+		.item1,.item2,.item3,.item4{
+			background: white;
+			border: 1px solid gray;
+			height: 100px;
+			width: 100px;
+			margin: 10px;
+			flex-grow: 0;
+		}
+
+		.item1{
+			order: 1;
+			flex-grow: 1;
+
+		}
+
+		.item2{
+			order: 2;
+		}
+
+		.item3{
+			order: 3;
+		}
+
+		.item4{
+			order: 4;
+		}
+
+
+
+
+
+	</style>
+	
+</head>
+<body>
+	<h1>Flexbox-Itens</h1>
+	<div id="conteudo">
+		<div class="item3">01</div>
+		<div class="item2">02</div>
+		<div class="item1">03</div>
+		<div class="item4">04</div>
+	</div>
+
+	
+	
+
+
+</body>
+</html>

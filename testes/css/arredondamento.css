@@ -1,0 +1,15 @@
+.caixa{
+	
+	background: #dedede url(../imagens/topo.png) no-repeat left top;
+	width: 400px;
+
+}
+
+.caixa p {
+	background: url(../imagens/baixo.png) no-repeat left bottom ;
+	padding: 0 20px 20px 20px; 
+}
+
+.caixa h2{
+	padding: 10px 20px 0 20px;
+}
