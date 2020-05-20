@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+      <script>
+         
+         var numero1 = prompt('Digite um número');
+         var numero2 = prompt('Digite um segundo número');
+         var operacao = prompt('Deseja realizar a soma ou subtração dos valores?');
+         Function calc(numero1,numero2,operacao){
+
+         numero1=parseFloat(numero1);
+         numero2=parseFloat(numero2);
+
+         var resultado=0;
+
+           
+         
+         if(operacao == 'soma'){
+            resultado=numero1+numero2;
+         }
+
+         if(operacao =='subtracao'){
+            resultado=numero1-numero2;
+         }
+
+         return resultado;
+
+         }
+
+         document.write('O Resultado é'+ calc(numero1,numero2,operacao));
+
+      </script>
+      
+   </head>
+    <body>
+    </body>
+</html>
