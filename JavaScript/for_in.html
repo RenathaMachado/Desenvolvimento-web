@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura forin</title>
+</head>
+<body>
+    <script>
+        var listaConvidados = Array()
+
+        listaConvidados[0] = 'Bruno'
+        listaConvidados['B']= 'Davi'
+        listaConvidados[true]= 'Renata'
+
+        console.log(listaConvidados)
+
+        for (var x in listaConvidados){
+            console.log( ` Indice ${x} valor ${listaConvidados[x]}`)
+        }
+    </script>
+</body>
+</html>
