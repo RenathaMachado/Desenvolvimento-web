@@ -12,6 +12,18 @@
         lista_funcionarios[1] = 'Davi'
         lista_funcionarios[2] = 'Bruno'
         lista_funcionarios[3] = 'Ana'
+
+        console.log(lista_funcionarios)
+
+        lista_funcionarios.forEach(function(valor, indice, array){
+            console.log(`indice ${indice}| valor ${valor}`)
+
+            if (valor=='Bruno'){
+                array[indice]= 'um novo valor'
+            }
+        })
+
+        console.log(lista_funcionarios)
     </script>
 </body>
 </html>
