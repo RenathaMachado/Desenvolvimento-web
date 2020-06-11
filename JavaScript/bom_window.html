@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom Window</title>
+
+    <script>
+
+        var janela
+
+        function abrirpopup(){
+            window.open('http://google.com', 'nova_janela', 'width=200,height=100')
+        }
+
+        function fecharrpopup(){
+            janela.close()
+        }
+    </script>
+</head>
+<body>
+   <button onclick="abrirpopup()" >Abrir janela</button> 
+   <button onclick="fecharrpopup()">Fechar janela</button>
+</body>
+</html>
