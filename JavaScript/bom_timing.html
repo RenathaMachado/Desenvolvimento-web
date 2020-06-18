@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Objeto location</title>
-
+    
     <script>
-        
-     </script>
+        //tempo para expirar usuário na página
+        //setTimeout(function(){document.write('teste')},2000)
+        var i = 5
+        setInterval(function(){
+            document.write(i)
+            i--
+
+            if(i===0){
+                window.location.reload()
+            }
+        }, 1000)
+
+
+    </script>
 </head>
 <body>
     
