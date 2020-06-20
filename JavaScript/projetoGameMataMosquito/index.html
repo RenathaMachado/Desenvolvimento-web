@@ -8,8 +8,24 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body onresize="ajustaTamanhoPalcoJogo()">
+    
+
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="Imagens/coracao_cheio.png">
+            <img id="v2"src="Imagens/coracao_cheio.png">
+            <img id="v3"src="Imagens/coracao_cheio.png">
+        </div>
+        <div class="cronometro"> Tempo restante: <span id="cronometro"></span></div>
+    </div>
+
     <script>
-        posicaoRandomica() // Inserido para que siga a ordem de precedência no qual deve ser apresentado.
+        document.getElementById('cronometro').innerHTML = tempo
+
+        setInterval(function(){ 
+        posicaoRandomica()
+    },3000)
+        
     </script>
     
 </body>

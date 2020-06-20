@@ -1,6 +1,8 @@
 
 var altura = 0
 var largura = 0
+var vidas = 1
+var tempo = 20
 
 function ajustaTamanhoPalcoJogo(){
     altura = window.innerHeight
@@ -12,7 +14,33 @@ function ajustaTamanhoPalcoJogo(){
 
     ajustaTamanhoPalcoJogo()
 
+    var cronometro = setInterval(function(){
+        tempo -= 1
+        if(tempo<0){
+            clearInterval(cronometro)
+            alert('Você venceu')
+            
+        }else{
+            document.getElementById('cronometro').innerHTML = tempo
+        }
+        document.getElementById('cronometro').innerHTML = tempo
+    }, 1000)
+
+
 function posicaoRandomica(){ 
+
+    // remover o mosquito anterior (caso exista)
+    if(document.getElementById('mosquito')){
+        document.getElementById('mosquito').remove()
+    
+    if (vidas>3){
+       window.location.href='fim_jogo.html'
+    }else {    
+
+        document.getElementById('v'+ vidas).src="Imagens/coracao_vazio.png"
+        vidas++
+        }
+    }
 
     var posicaoX = Math.floor(Math.random() * largura) - 90 // valor negativo inserido para se posicionar dentro do body
     var posicaoY = Math.floor(Math.random() * altura) - 90 // valor negativo inserido para se posicionar dentro do body
@@ -30,10 +58,12 @@ function posicaoRandomica(){
     mosquito.style.left = posicaoX + 'px'
     mosquito.style.top = posicaoY + 'px'
     mosquito.style.position = 'absolute'
+    mosquito.id = 'mosquito'
+    mosquito.onclick= function(){
+        this.remove()
+    }
 
     document.body.appendChild(mosquito) 
-
-    
 }
 
 function tamanhoAleatorio(){
