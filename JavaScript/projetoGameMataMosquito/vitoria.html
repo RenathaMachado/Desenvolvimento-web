@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <title>Inicio do Jogo</title>
+    <title>Fim de jogo</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,20 +9,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
-
-    <script>
-        function iniciarJogo(){
-            
-            var nivel = document.getElementById('nivel').value
-
-            if(nivel===''){
-                alert('Escolha um nível')
-                return false
-            }
-            
-            window.location.href= "app.html?" + 'normal'
-        }
-    </script>
   </head>
   <body>
 
@@ -30,7 +16,7 @@
         <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-center ">
-                    <img src="Imagens/game.png">
+                    <img src="Imagens/vitoria.png">
                 </div>
             </div>
         </div>
@@ -38,24 +24,7 @@
         <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-center ">
-                    <div class="mb-2">
-                        <select class="form-control" id="nivel">
-                            <option value="">--Selecione o nível--</option>
-                            <option value="normal">Normal</option>
-                            <option value="dificil">Difícil</option>
-                            <option value="chucknorris">Chuck norris</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col">
-                <div class="d-flex justify-content-center ">
-                    <button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">Iniciar Jogo</button>
+                    <button type="button" class="btn btn-dark btn-lg" onclick="window.location.href='index.html'">Reiniciar</button>
                 </div>
             </div>
         </div>
