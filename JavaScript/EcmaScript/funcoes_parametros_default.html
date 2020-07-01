@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Parametros default</title>
+
+</head>
+<body>
+
+    <script>
+        function contarUmaHistoria(personagem = 'Alfredo', atividade = 'correr no parque', nome_dono = 'João')
+        {
+          document.write (`Era uma vez um cachorro chamado ${personagem}, ele adorava ${atividade}, seu dono era ${nome_dono} e eles viveram felizes para sempre`)
+        }
+
+        contarUmaHistoria (undefined, 'rolar no chão', 'Luiz')
+
+    </script>
+    
+</body>
+</html>

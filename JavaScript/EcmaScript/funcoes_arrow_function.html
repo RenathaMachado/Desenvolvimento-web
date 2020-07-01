@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Parametros default</title>
+
+</head>
+<body>
+
+    <script>
+        /*
+        let quadrado = function(x){
+            return x*x
+        }
+
+        document.write(quadrado(3))
+        */
+
+        /*let quadrado = (x)=>{
+            return x*x
+        }
+        document.write(quadrado(5))
+        */
+
+        /*let parImpar = (calculo)=>{
+
+            if(calculo % 2 === 0){
+                return 'Par'
+            } else{
+                return 'Impar'
+            }
+         }
+
+         document.write(parImpar(8))
+        */
+       
+        let parImpar = (calculo) => calculo % 2 === 0 ? 'par': 'impar'
+
+        document.write(parImpar(15))
+    </script>
+    
+</body>
+</html>

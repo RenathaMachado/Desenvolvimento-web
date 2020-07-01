@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var_Let</title>
+
+</head>
+<body>
+    <!--Escopos: Global, Função e Bloco-->
+
+    <script>
+
+        /*var serie = 'friends'
+        function x(){
+            var serie = 'Hose of cards'
+
+            if(true){
+                console.log('Escopo dentro da função' + serie)
+            }
+        }
+        x()
+
+        if(true){
+             console.log('Escopo global' + serie)   
+            }
+        */
+
+        
+        function x(){
+            
+            if(true){
+                var serie = 'The Walking Dead'
+            }
+        }
+        
+        x()
+        if(true){
+            console.log(serie)   
+        }
+          
+            
+        
+    </script>
+</body>
+</html>
