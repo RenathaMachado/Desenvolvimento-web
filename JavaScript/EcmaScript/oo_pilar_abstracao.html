@@ -35,15 +35,17 @@
             consultarSaldo(){
                 return this.saldo
             }
-
-            let x = new ContaBancaria()
-            let y = new COntaBancaria()
-
-            x.depositar(){
-                console.log(x(50))
-            }
-
         }
+        // instância do objeto. Lembrando que a classe é apenas o modelo do objeto
+        
+        let x = new ContaBancaria()
+        let y = new ContaBancaria()
+
+            console.log(x.consultarSaldo())
+            x.depositar(200)
+            console.log(x.consultarSaldo())
+            x.sacar(50)
+            console.log(x.consultarSaldo())
 
 
 

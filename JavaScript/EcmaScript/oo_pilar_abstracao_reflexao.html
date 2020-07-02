@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilar da Abstração- Reflexão</title>
+
+</head>
+
+<body>
+    <script>
+
+        // Um software de mercenaria
+        // cadeira e sofá
+
+        //paradigma procedural
+
+        // cadeira
+
+       /* let quat_pernas = 1
+        let giratoria = true
+        let cor = 'azul'
+
+        function girar_cadeira(){
+            if(giratoria === true){
+                console.log('Cadeira gira')
+            } else {
+                console.log('Cadeira não gira')
+            }
+        }
+
+        girar_cadeira()
+        */
+
+        /*
+        // Array de cadeiras
+         let cadeiras = Array()
+
+            cadeiras [0] = Array()
+            cadeiras [0]['quat_pernas'] = 4
+            cadeiras [0]['giratoria'] = false
+            cadeiras [0]['cor'] = 'azul'
+
+            cadeiras [1] = Array()
+            cadeiras [1]['quat_pernas'] = 1
+            cadeiras [1]['giratoria'] = true
+            cadeiras [1]['cor'] = 'verde'
+
+        function girar_cadeira(indice){
+            if(cadeiras[indice]['giratoria'] === true){
+                console.log('Cadeira gira')
+            } else {
+                
+            }
+        }
+
+        function adicionar_cadeira(quat_perna, giratoria, cor ){
+            let cadeira = Array()
+console.log('Cadeira não gira')
+            cadeira['quat_perna'] = quat_perna
+            cadeira['giratoria'] = giratoria
+            cadeira['cor'] = cor
+            cadeiras.push(cadeira)
+        }
+
+        adicionar_cadeira(4,false,'verde')
+
+        console.log(cadeiras)
+
+        */
+
+        // Paradigma de orientação Objetos(oo)
+
+        /*
+
+        class modeloCadeira{
+
+            constructor(quat_perna, giratoria, cor){
+                this.quat_perna = quat_perna
+                this.giratoria = giratoria
+                this.cor = cor
+            }
+
+            girarCadeira(){
+                if(this.giratoria === true){
+                    console.log('Cadeira gira')
+                } else{
+                    console.log('Cadeira não gira')
+                }
+            }
+        }
+
+        let cadeira = new modeloCadeira(4,false,'branca')
+        let cadeira2 = new modeloCadeira(4,false,'branca')
+
+        console.log(cadeira)
+        cadeira2.girarCadeira() 
+
+        */
+
+        // modelo sofá
+
+        class modeloSofa{
+            construcor(sofaReclinavel,sofaLugares,sofaCor){
+                this.sofaReclinavel = sofaReclinavel
+                this.sofaLugares = sofalugares
+                this.sofaCor= sofaCor
+            }
+        
+
+        reclinaSofa(){
+            if(this.sofaReclinavel === true){
+                console.log('Este sofá é reclinavel')
+            } else{
+                console.log('Este sofá não é reclinavel')
+            }
+        }
+
+        }
+
+        let sofa = new modeloSofa(true, 4, 'vermelho')
+
+        console.log(sofa)
+        
+        
+    </script>
+</body>
+</html>
