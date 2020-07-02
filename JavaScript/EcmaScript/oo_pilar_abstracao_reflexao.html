@@ -101,9 +101,9 @@ console.log('Cadeira não gira')
         // modelo sofá
 
         class modeloSofa{
-            construcor(sofaReclinavel,sofaLugares,sofaCor){
+            constructor(sofaReclinavel,sofaLugares,sofaCor){
                 this.sofaReclinavel = sofaReclinavel
-                this.sofaLugares = sofalugares
+                this.sofaLugares = sofaLugares
                 this.sofaCor= sofaCor
             }
         
@@ -111,16 +111,17 @@ console.log('Cadeira não gira')
         reclinaSofa(){
             if(this.sofaReclinavel === true){
                 console.log('Este sofá é reclinavel')
-            } else{
+            }else{
                 console.log('Este sofá não é reclinavel')
             }
         }
 
         }
 
-        let sofa = new modeloSofa(true, 4, 'vermelho')
+        let sofa = new modeloSofa(false,4,'vermelho')
 
         console.log(sofa)
+        sofa.reclinaSofa()
         
         
     </script>

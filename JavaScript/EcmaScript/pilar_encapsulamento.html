@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilar do encapsulamento</title>
+</head>
+<body>
+   <script>
+       class Tv{
+           constructor(){
+               this._relacaoCanais = Array(2, 4, 5, 7, 10)
+               this._canalAtivo = 5
+               this._volume = 5
+           }
+
+           get _canalAtivo(){
+               return this._canalAtivo 
+           }   
+       }
+
+       let tv = new Tv()
+       console.log(tv.canalAtivo)
+
+
+   </script> 
+</body>
+</html>
