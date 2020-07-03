@@ -7,10 +7,22 @@
     
 
     <script>
-        class cachorro{
+
+        class animal{
             constructor(){
-                this.cor = 'Branco e Marrom'
-                this.tamanho = 30
+                this.cor = ''
+                this.tamanho = null
+            }
+
+            dormir(){
+                console.log('Dormir')
+            }
+
+            
+        }
+        class cachorro extends animal{
+            constructor(){
+                super()
                 this.orelhas = 'Grandes e caídas'
             }
 
@@ -18,34 +30,47 @@
                 console.log('correr')
             }
 
-            dormir(){
-                console.log('dormir')
-
-            }
+            
 
             rosnar(){
                 console.log('rosnar')
             }
         }
 
-        class passaro{
+        class passaro extends animal{
             constructor(){
-                this.cor = 'Branco e marrom'
-                this.tamanho = 10
+                 super()
                 this.bico = 'curto'
             }
 
             voar(){
                 console.log('voar')
             }
+        }
 
-            dormir(){
-                console.log('dormir')
+        class papagaio extends passaro{
+            constructor(){
+                super()
+                this.sabeFalar = true
+
             }
+
+            falar(){
+                conosole.log('Falar')
+            }
+
         }
 
         let Cachorro = new cachorro()
         let Passaro = new passaro()
+        let Papagaio = new papagaio()
+
+        Cachorro.dormir()
+        Passaro.dormir()
+        Papagaio.dormir() // herdou o método dormir do passaro e que por sua vez tinha herdado da class Animal
+        //console.log(Cachorro)
+        //console.log(Passaro)
+        
 
     </script>
 </head>
