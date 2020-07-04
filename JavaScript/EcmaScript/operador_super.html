@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilar da Herança</title>
+    
+
+    <script>
+
+        class animal{
+            constructor(){
+                this.cor = null
+                this.peso = null
+                this.tamanho = null
+            }
+
+            dormir(){
+                console.log('Dormir')
+            }
+        }
+        
+
+        class passaro extends animal{
+            constructor(){
+                 super()
+                this.bico = null
+            }
+
+            voar(){
+                console.log('voar')
+            }
+        }
+
+        class papagaio extends passaro{
+            constructor(sabeFalar){
+                super()
+                this.sabeFalar = sabeFalar
+
+            }
+
+            falar(){
+                conosole.log('Falar')
+            }
+
+        }
+
+        let Papagaio = new papagaio(true)
+        console.log(Papagaio)
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
