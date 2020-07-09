@@ -45,10 +45,28 @@
 
         }
 
+        class Avestruz extends passaro{
+            constructor(bico, cor, peso, tamanho){
+                super(bico, cor, peso, tamanho)
+            }
+
+            enterrarCabeca(){
+                console.log('Enterrar cabeça')
+            }
+
+            voar(){
+                console.log(false)
+            }
+        }
+
         let Papagaio = new papagaio(true, 'vermelho e azul', 10, 15)
         console.log(Papagaio)
-        let Passaro = new passaro('curto', 'cinza', 5, 10)
-        console.log(Passaro)
+        Papagaio.voar()
+        let avestruz = new Avestruz('Grande', 'Branco e preto', 250, 15000)
+        console.log(avestruz)
+        avestruz.enterrarCabeca()
+        avestruz.voar()
+        
         
     </script>
 </head>
