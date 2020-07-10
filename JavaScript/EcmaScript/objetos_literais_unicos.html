@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto literal - Melhorias</title>
+    
+
+    <script>
+        let assinatura = {
+            idCliente: 1000,
+            descricao: 'acesso a internet',
+            status(){
+                console.log('Ativo')
+            }
+        }
+        console.log(assinatura.descricao)
+
+        let x = assinatura
+
+        console.log(x.descricao)
+
+        x.descricao= 'Internet + tv + telefone'
+        console.log(assinatura.descricao)
+        console.log(x.descricao)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
