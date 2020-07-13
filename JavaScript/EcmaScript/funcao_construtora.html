@@ -10,11 +10,31 @@
         let carro = function(){
             this.cor = 'Amarelo'
             this.modelo = 'chevett'
-            this.velocidadeAtual = 0
-            this.velocidadeMaxima = 180
+            this.VelocidadeAtual = 0
+            this.VelocidadeMaxima = 180
+
+            this.acelerar = function(){
+                //this.velocidadeAtual += 10
+
+                let velocidade = this.getVelocidadeAtual() + 10
+                this.setVelocidadeAtual(velocidade)
+            }
+
+            this.getVelocidadeAtual = function(){
+                return this.VelocidadeAtual
+            }
+
+            this.setVelocidadeAtual = function(VelocidadeAtual){
+                this.VelocidadeAtual = VelocidadeAtual
+            }
         }
 
         let Carro = new carro()
+        console.log(`A velocidade atual é ${Carro.getVelocidadeAtual()}`)
+        Carro.acelerar()
+        console.log(`A velocidade atual é ${Carro.getVelocidadeAtual()}`)
+
+        
 
     </script>
 </head>
