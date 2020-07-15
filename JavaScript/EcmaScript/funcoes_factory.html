@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto literal - Melhorias</title>
+    
+
+    <script>
+        let bicicletaFactory = function(cor, marcha, aro){
+            return{
+                cor,
+                marcha,
+                aro,
+                pedalar(){
+                    console.log('Método pedalar executado')
+                }
+            }
+        }
+
+        console.log(bicicletaFactory())
+
+        let bicicleta2 = bicicletaFactory('azul', 'automatica', 26)
+        console.log(bicicleta2)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

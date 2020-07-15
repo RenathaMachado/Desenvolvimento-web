@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest-Spread</title>
+    
+
+    <script>
+
+        // Spread
+        let TituloArtigo = 'Como utilizar o operador rest/spread '
+        // string
+        console.log(TituloArtigo)
+        console.log(...TituloArtigo)
+        console.log(...TituloArtigo)
+
+        // arrays
+        let  listaCursos1= ['html5', 'JavaScript', 'css3']
+        let listaCursos2 = ['PHP', 'Laravel', 'NodeJS']
+        let listaCursos3 = [...listaCursos1, 'Bootstrap', ...listaCursos2]
+
+        console.log(listaCursos3)
+
+        // Rest
+
+        function soma(...s){
+            let resultado = 0
+            console.log(s)
+
+            s.forEach(v => resultado += v)
+
+            return resultado
+        }
+
+        console.log(soma(3, 8, 5, 4, 1))
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
