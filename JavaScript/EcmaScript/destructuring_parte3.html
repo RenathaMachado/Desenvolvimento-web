@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring-Assignment</title>
+    
+
+    <script>
+        // array
+
+        /*let arr = [10, 20, 40]
+
+        function teste([a, b, c, d=100]){
+            console.log(a, c, d)
+        }
+            teste(arr)
+        */
+       
+        // objeto
+
+        let objeto = {
+            a: 10,
+            b: 20,
+            c: 30,
+            d: 40
+        }
+
+        function teste({a,b}){ // a chamada do atributo fica entre chaves
+            console.log(a,b)
+        }
+
+        teste(objeto)
+
+        
+    </script>
+</head>
+<body>
